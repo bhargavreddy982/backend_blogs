@@ -17,7 +17,7 @@ const Post=require('./models/Post');
 const saltRounds = 10;
 const salt = bcrypt.genSaltSync(saltRounds);
 
-app.use(cors({credentials:true,origin:"https://new-front-end-blogs-project.onrender.com"}));
+app.use(cors({credentials:true,origin:"http://localhost:3000"}));
 app.use(express.json());
 //cookie parser"
 app.use(cookieParser());
